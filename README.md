@@ -1,4 +1,4 @@
-# sofya-chatbot-project
+# Chatbot Sofya: Guia Oncológico Virtual
 
 ![Imagem do WhatsApp de 2023-12-01 à(s) 12 43 57_7c0aa947](https://github.com/Rian-Freitas/sofya-chatbot-project/assets/85463854/00232d05-7265-41be-b7d2-b512996b79c8)
 
