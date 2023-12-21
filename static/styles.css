@@ -1,0 +1,230 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	color: #1d3973;
+	/*background-image: url('https://www.sofya.ai/images/thumbnail-sofya.png');*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container::before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.container .navbar{ 
+	background: #fff;
+	height: 100px;
+	display: flex;
+	border-bottom: 3px solid #95a0bf;
+	opacity: 0.8;
+}
+
+/*
+#77b9f2 - azul claro
+#4174d9 - azul um pouco mais forte
+#95a0bf - cinza
+#1d3973 - azul marinho
+#a55ba6 - rosa
+*/
+
+.container .navbar .left{
+	height: 100%;
+	display: flex;
+	float: left;
+}
+
+.container .navbar .left img{
+	padding: 20px;
+	position: absolute;
+	left: 30px;
+}
+
+.container .navbar .right{
+	padding: 25px;
+	display: flex;
+	float: right;
+	position: absolute;
+	right: 50px;
+}
+.container .navbar .right img{
+	margin-left: 10px;
+}
+
+.container .navbar .right a{
+	position: relative;
+	margin: 20px;
+
+}
+
+.container .navbar .right a:link{
+	font-family: sans-serif;
+	color: #1d3973;
+	text-decoration: none;
+}
+
+.container .navbar .right a:visited{
+	decoration: none;
+}
+ 
+.container .navbar .right a:hover > .bar{
+	background-color: #1d3973;
+	text-decoration: none;
+	height: 2px;
+}
+
+.container .title{
+	background: #fff;
+	opacity: 0.8;
+	margin: 200px 400px 100px 400px;
+	line-height: 1.5;
+	border-radius: 50px;
+}
+
+.container .title .content{
+	width: 950px;
+	margin: auto;
+	padding: 75px 0;
+	text-align: center;
+}
+
+.container .title .content h1{
+	width: 650px;
+	margin: auto;
+	font-size: 3.1rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.container .title .content h2{
+	width: 650px;
+	margin: auto;
+	font-size: 1.6rem;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.container .title .content form .input{
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.container .title .content form .input input{
+	height: 50px;
+	width: 650px;
+	margin: auto;
+	font-size: 20px;
+	padding: 0 0 0 20px;
+}
+
+.container .title .content form .input button{
+	margin: auto;
+	height: 55px;
+	width: 180px;
+	align-items: center;
+	justify-content: center;
+	background: #a55ba6;
+	font-size: 20px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.container .title .content form .input button a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.with-bg-size {
+  background-image: url('https://www.sofya.ai/logo.svg');
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+/*ChatBot*/
+
+.chat{
+	display: flex;
+	gap: 20px;
+	padding: 25px;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.chat material-symbols-outlined{
+	width: 35px;
+	height: 35px;
+}
+
+.response{
+	background-color: #e6e6fA;
+}
+
+.messagebar .bar-wrapper{
+	background-color: #95a0bf;
+	border-radius: 5px;
+	width: 80vw;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bar-wrapper input{
+	width: 100%;
+	padding: 5px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	background: none;
+	color: #fff;
+}
+
+.bar-wrapper input::placeholder{
+	color: #fff;
+}
+
+.messagebar button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: none;
+	border: none;
+	color: #fff;
+}
+
+.messagebar {
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #b0c4de;
+    background-color: #1d3973;
+}
+
+.message-box {
+    height: calc(100vh - 11rem);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 5px, transparent 5px, transparent 100%);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.list {
+  padding-left: 20px;
+}

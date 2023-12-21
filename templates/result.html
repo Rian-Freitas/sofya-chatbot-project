@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('serve_static', path='styles.css') }}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<title>Sofya ChatBot</title>
+	<link rel="icon" type="image/x-icon" href="logo-icon.svg">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="left">
+				<img src="https://www.sofya.ai/logo.svg" alt="logo">
+			</div>
+			<div class="right">
+				<a href="#"><h3>Notícias</h3>
+					<div class="bar"></div>
+				</a>
+				<a href="#"><h3>Contato</h3>
+					<div class="bar"></div>
+				</a>
+				<img src="https://www.sofya.ai/images/flag-br.svg" alt="br-flag">
+			</div>
+		</div>
+	</div>
+	<div class="chatbot">
+		<div class="message-box">
+			<div class="chat response">
+				<span class="material-symbols-outlined">
+				support_agent
+				</span>
+				<span>Olá, como posso te ajudar?
+				</span>
+			</div>
+		</div>
+		<div class="messagebar">
+			<div class="bar-wrapper" id="submitButton">
+				<input type="text" placeholder="Digite seu texto...">
+				<button>
+					<span class="material-symbols-outlined">
+					send
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="{{ url_for('serve_static', path='script.js') }}"></script>
+</body>
+</html>
