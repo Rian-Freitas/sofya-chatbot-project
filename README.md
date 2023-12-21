@@ -20,4 +20,10 @@ Com base em guias de oncologia para cuidados, posologia e indicações para paci
 - Flask 2.2.5
 - Llama Index 0.9.12
 - PyPDF 3.17.1
-- 
+- Accelerate 0.25.0
+
+### Como utilizar
+
+Apenas rode o arquivo `test.py` e espere o tempo de carregamento até o terminal responder com um URL da aplicação Flask. Basta usar `CTRL + Click` na URL ou copiar e colar no navegador de sua preferência.
+
+*Projeto realizado no Field Project, na Escola de Matemática Aplicada da FGV, 2023.*
